@@ -17,10 +17,16 @@ public class Solution {
         ListIterator<Integer> it = list.listIterator();
         // TODO: Traverse the list in the forward direction and print the elements
         System.out.print("Forward: ");
-        while(it.hasNext()) System.out.print(it.next() + " ");
+        for(int j=0; j<N; j++) {
+          System.out.print(it.next());
+          if(j!=N-1) System.out.print(" ");
+        }
         // TODO: Traverse the list in the backward direction and print the elements
         System.out.print("\nBackward: ");
-        while(it.hasPrevious()) System.out.print(it.previous() + " ");
+        for(int k = 0; k < N; k++) {
+          System.out.print(it.previous());
+          if(k!=N-1) System.out.print(" ");
+        }
         sc.close();
     }
 }
